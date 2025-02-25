@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carte Arborescente Interactives</title>
+    <title>Carte Arborescente Interactive</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="title">Carte Arborescente des Données</h1>
-        <p id="description">Cette carte présente une représentation graphique des données de ventes ou de financements.</p>
+        <h1 id="title">Carte Arborescente des Ventes de Jeux Vidéo</h1>
+        <p id="description">Cette carte arborescente affiche les ventes des jeux vidéo par genre.</p>
     </header>
 
-    <section id="tree-map">
-        <!-- L'espace pour la carte arborescente dynamique sera généré ici. -->
-    </section>
+    <div id="chart-container">
+        <div id="tree-map"></div>
+    </div>
 
     <footer>
-        <div id="legend">
-            <!-- Légende dynamique sera générée ici. -->
-        </div>
+        <div id="legend"></div>
     </footer>
 
     <div id="tooltip" class="hidden">
         <!-- Info-bulle qui s'affiche au survol -->
     </div>
 
+    <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
