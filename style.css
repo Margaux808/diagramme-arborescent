@@ -4,14 +4,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
-/* Titres et descriptions */
+/* Header */
 header {
     background-color: #333;
-    color: #fff;
+    color: white;
     padding: 20px;
-    text-align: center;
 }
 
 h1 {
@@ -20,29 +20,15 @@ h1 {
 }
 
 #description {
-    margin-top: 10px;
     font-size: 1.2em;
+    margin-top: 10px;
 }
 
-/* Carte arborescente */
-#tree-map {
+/* Conteneur pour la carte */
+#chart-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
-}
-
-.tile {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    position: relative;
-    cursor: pointer;
-    opacity: 0.9;
-}
-
-.tile:hover {
-    opacity: 1;
+    padding: 20px;
 }
 
 /* Légende */
@@ -53,7 +39,7 @@ h1 {
 }
 
 .legend-item {
-    width: 50px;
+    width: 30px;
     height: 20px;
     margin: 5px;
 }
