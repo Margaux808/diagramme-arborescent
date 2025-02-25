@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carte Arborescente Interactive</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1 id="title">Carte Arborescente des Ventes de Jeux Vidéo</h1>
-        <p id="description">Cette carte arborescente affiche les ventes des jeux vidéo par genre.</p>
-    </header>
-
-    <div id="chart-container">
-        <div id="tree-map"></div>
-    </div>
-
-    <footer>
-        <div id="legend"></div>
-    </footer>
-
-    <div id="tooltip" class="hidden">
-        <!-- Info-bulle qui s'affiche au survol -->
-    </div>
-
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3.0.0/dist/d3-scale-chromatic.min.js"></script>
+  </head>
+  <body>
+    <a href="?data=videogames">Video Game Data Set</a> |
+    <a href="?data=movies">Movies Data Set</a> |
+    <a href="?data=kickstarter">Kickstarter Data Set</a>
+    <h1 id="title"></h1>
+    <div id="description"></div>
+    <svg id="tree-map" width="960" height="570"></svg>
+    <svg id="legend" width="500"></svg>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
