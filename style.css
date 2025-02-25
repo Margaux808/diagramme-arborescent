@@ -1,0 +1,73 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Titres et descriptions */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#description {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Carte arborescente */
+#tree-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.tile:hover {
+    opacity: 1;
+}
+
+/* Légende */
+#legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.legend-item {
+    width: 50px;
+    height: 20px;
+    margin: 5px;
+}
+
+/* Info-bulle */
+#tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
